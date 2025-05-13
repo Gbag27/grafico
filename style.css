@@ -1,0 +1,43 @@
+main{
+    margin-top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 60px;
+}
+
+.chart-row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+.label {
+    width: 100px;
+    font-weight: bold;
+}
+
+.ghost-row {
+    width: 300px;
+    height: 20px;
+    background: #ddd;
+    position: relative;
+    overflow: hidden;
+}
+
+.row {
+    height: 100%;
+    background: linear-gradient(90deg, #da70d6, #9932cc);
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: grow 2s forwards;
+}
+
+    @keyframes grow {
+      to {
+        transform: scaleX(1);
+      }
+    }
